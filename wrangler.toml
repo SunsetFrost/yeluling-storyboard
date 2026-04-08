@@ -1,2 +1,6 @@
 name = "yeluling-storyboard"
 compatibility_date = "2026-04-07"
+main = "worker.js"
+
+[assets]
+directory = ".cf-dist"
