@@ -698,6 +698,38 @@
       </div>
     </section>
 
+    <section class="section-card" style="margin-top:22px;">
+      <div class="section-head" style="margin-top:0; margin-bottom:14px;">
+        <h2>Seedance Prompt 优化规则</h2>
+        <p>这一版分镜按 <code>seedance-prompt-skill</code> 的思路重写：先写技术参数和禁止项，再写角色一致性引用，然后用时间戳分镜法把画面、镜头语言、台词和音效绑在一起，方便直接复制去即梦继续生视频。</p>
+      </div>
+      <div class="rule-grid grid-3">
+        <div class="rule"><strong>规则 A / 技术参数前置</strong><br><span style="color:var(--muted); line-height:1.8; display:block; margin-top:8px;">每条 prompt 开头先写画幅比、时长、风格、色调、摄影质感，例如：<strong>16:9，24fps，2分钟预告片拆段，湘西民俗恐怖，民国写实，低饱和，电影摄影</strong>。</span></div>
+        <div class="rule"><strong>规则 B / 角色引用显式化</strong><br><span style="color:var(--muted); line-height:1.8; display:block; margin-top:8px;">把阿回、年轻赶尸人、老傩、母亲写成固定参考位：<strong>@图片1 阿回三视图、@图片2 年轻赶尸人三视图、@图片3 老傩、@图片4 母亲</strong>，每段镜头都明确引用。</span></div>
+        <div class="rule"><strong>规则 C / 禁止项单列</strong><br><span style="color:var(--muted); line-height:1.8; display:block; margin-top:8px;">明确排除：<strong>不要仙侠、不要古偶、不要明星脸、不要网红滤镜、不要字幕、不要 Logo、不要现代道具穿帮</strong>。</span></div>
+      </div>
+      <div class="rule-grid grid-3" style="margin-top:14px;">
+        <div class="rule"><strong>规则 D / 时间戳分镜法</strong><br><span style="color:var(--muted); line-height:1.8; display:block; margin-top:8px;">把长视频拆成短段 prompt：例如 <strong>0-8秒、9-14秒</strong>，每段只负责一个动作和一个情绪，不要把五件事挤在一镜里。</span></div>
+        <div class="rule"><strong>规则 E / 镜头语言写全</strong><br><span style="color:var(--muted); line-height:1.8; display:block; margin-top:8px;">必须写景别、角度、运镜、节奏、焦点转移，如：<strong>第一视角、缓推、低角度、停顿、突然断铃</strong>。</span></div>
+        <div class="rule"><strong>规则 F / 声音与对白并写</strong><br><span style="color:var(--muted); line-height:1.8; display:block; margin-top:8px;">Seedance 适合把<strong>对白、环境声、音效、情绪</strong>直接写进 prompt，尤其《夜路铃》这种强依赖铃声、风声、回声的预告片。</span></div>
+      </div>
+    </section>
+
+    <section class="section-card" style="margin-top:22px;">
+      <div class="section-head" style="margin-top:0; margin-bottom:14px;">
+        <h2>16 镜 Seedance 优化版 Prompt 结构</h2>
+        <p>下面不是普通文案，而是已经按 Seedance 习惯重写过的镜头提示词骨架。真正喂即梦时，建议把 16 镜拆成 4 段，每段 12–15 秒，再用视频延长或剪辑串起来。</p>
+      </div>
+      <div class="next-grid">
+        <div class="mini"><div class="eyebrow">段落 01 · 00:00–00:28</div><strong>镜 1–4</strong><p style="margin:8px 0 0; color:var(--muted); line-height:1.8;">16:9，24fps，湘西民俗恐怖，民国写实，低饱和暖冷对比，@图片3老傩，@图片5火塘环境。0-8秒：年轻采访者第一视角抬起录音笔，对准火塘边的老傩，火光摇晃，老人低声说“赶尸人，我见过”；8-14秒：中近景推近老傩，眼神沉下去，火塘噼啪作响；14-21秒：@图片4母亲粗糙的手把黄符塞进阿回衣襟，指甲掐进衣料；21-28秒：山路起点全景，月亮像钉在山口，风压芭茅。禁止字幕、禁止多人杂乱群像、禁止古偶脸。</p></div>
+        <div class="mini"><div class="eyebrow">段落 02 · 00:28–00:58</div><strong>镜 5–8</strong><p style="margin:8px 0 0; color:var(--muted); line-height:1.8;">16:9，24fps，@图片1阿回三视图锁脸。28-35秒：阿回夜路中近景，背竹篓，胸口藏符，月光打半张脸；35-42秒：手撒米粒，米落在湿泥路上；42-49秒：只看湿泥里的整齐草鞋印，不出现草鞋本体；49-58秒：斗笠黑纱遮面的赶尸队伍显形，队形整齐，膝盖不弯。不要网红滤镜，不要仙侠法术光效。</p></div>
+        <div class="mini"><div class="eyebrow">段落 03 · 00:58–01:28</div><strong>镜 9–12</strong><p style="margin:8px 0 0; color:var(--muted); line-height:1.8;">16:9，24fps，@图片2年轻赶尸人三视图，必须与@图片1同脸仅更白更冷。58-66秒：斗笠黑纱遮面的赶尸人停铃，只说一个字“让”；66-73秒：黄符在阿回胸口冒烟烧成灰；73-80秒：土地庙门口草鞋和门槛，中景短停顿；80-88秒：土地庙内景，香灰、米粒、黄符、旧木门压出狭窄空间感。禁止露出完整正脸。</p></div>
+        <div class="mini"><div class="eyebrow">段落 04 · 01:28–02:00</div><strong>镜 13–18</strong><p style="margin:8px 0 0; color:var(--muted); line-height:1.8;">16:9，24fps，后段身份反照与情感收束。88-96秒：队伍末尾尸体回头，像阿回；96-103秒：年轻赶尸人半遮面现身，像阿回的死人镜子；103-110秒：阿回与年轻赶尸人同脸对照；110-116秒：母亲在门槛前喊“阿回，回家吃饭了”；116-119秒：阿回低头，脚边是草鞋；119-120秒：黑场+片名《夜路铃》+最后一记孤铃。不要现代医院穿帮，不要海报式摆拍，不要过度恐怖妆。</p></div>
+        <div class="mini"><div class="eyebrow">全局负面词</div><strong>统一禁止项</strong><p style="margin:8px 0 0; color:var(--muted); line-height:1.8;">不要仙侠、不要古偶、不要明星脸、不要网红妆面、不要华丽服饰、不要过曝金光、不要悬浮法阵、不要现代建筑、不要字幕、不要 Logo、不要脏乱无章的多人物群像。</p></div>
+        <div class="mini"><div class="eyebrow">全局角色规则</div><strong>一致性写法</strong><p style="margin:8px 0 0; color:var(--muted); line-height:1.8;">阿回统一写成：瘦长脸、直眉、薄唇、普通湘西山里青年；年轻赶尸人统一写成：与阿回完全同脸，仅肤色更白、眼神更空、更冷、并以斗笠黑纱遮面呈现。</p></div>
+      </div>
+    </section>
+
     <section class="next-card" style="margin-top:22px;">
       <div class="section-head" style="margin-top:0; margin-bottom:14px;">
         <h2>下一步可继续补的镜头</h2>
