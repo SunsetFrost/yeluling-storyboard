@@ -3,170 +3,176 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>《夜路铃》完整分镜板</title>
-  <meta name="description" content="《夜路铃》预告片完整分镜与关键帧展示页" />
+  <title>《夜路铃》完整预告片分镜板</title>
+  <meta name="description" content="《夜路铃》2分钟预告片完整版 storyboard，含角色锁定、关键镜头、声音设计与后续补镜建议。" />
   <style>
     :root {
       --bg: #050303;
-      --bg-2: #120807;
-      --panel: rgba(20, 11, 9, 0.86);
-      --panel-2: rgba(35, 18, 14, 0.88);
-      --line: rgba(186, 134, 61, 0.24);
-      --gold: #c89b55;
-      --gold-soft: #9e753c;
-      --red: #731717;
-      --red-soft: #391111;
-      --text: #f5e8d6;
-      --muted: #b7a28a;
-      --dim: #857260;
-      --shadow: 0 28px 90px rgba(0,0,0,.46);
-      --radius: 26px;
+      --bg2: #120807;
+      --panel: rgba(18,10,9,.9);
+      --panel-2: rgba(32,17,14,.88);
+      --line: rgba(196,145,77,.22);
+      --gold: #d0a05e;
+      --gold-soft: #a67a41;
+      --red: #6e1515;
+      --red-soft: #321010;
+      --text: #f4e7d6;
+      --muted: #b9a48d;
+      --dim: #877462;
+      --shadow: 0 24px 90px rgba(0,0,0,.45);
+      --radius: 24px;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
       color: var(--text);
-      font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       background:
-        radial-gradient(circle at top, rgba(122, 19, 19, 0.18), transparent 28%),
-        radial-gradient(circle at 85% 12%, rgba(200, 155, 85, 0.12), transparent 18%),
-        linear-gradient(180deg, #140908 0%, #070404 34%, #040202 100%);
+        radial-gradient(circle at top, rgba(126, 20, 20, .16), transparent 26%),
+        radial-gradient(circle at 80% 12%, rgba(208,160,94,.10), transparent 16%),
+        linear-gradient(180deg, #140908 0%, #070404 38%, #030202 100%);
       min-height: 100vh;
       letter-spacing: .02em;
     }
     body::before {
       content: "";
-      position: fixed; inset: 0;
+      position: fixed;
+      inset: 0;
       pointer-events: none;
-      opacity: .18;
+      opacity: .14;
       mix-blend-mode: screen;
-      background:
-        linear-gradient(rgba(255,255,255,.03), rgba(255,255,255,0)),
-        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="1.15" numOctaves="2" stitchTiles="stitch"/></filter><rect width="160" height="160" filter="url(%23n)" opacity="0.10"/></svg>');
+      background: linear-gradient(rgba(255,255,255,.02), rgba(255,255,255,0)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="1.08" numOctaves="2" stitchTiles="stitch"/></filter><rect width="180" height="180" filter="url(%23n)" opacity="0.10"/></svg>');
     }
+    img { display: block; max-width: 100%; }
     a { color: inherit; }
-    .wrap { width: min(1220px, calc(100% - 28px)); margin: 0 auto; }
-    header { padding: 54px 0 28px; }
+    .wrap { width: min(1240px, calc(100% - 28px)); margin: 0 auto; }
+    header { padding: 52px 0 26px; }
     .hero {
       position: relative;
       overflow: hidden;
       border-radius: 32px;
       border: 1px solid var(--line);
-      background: linear-gradient(180deg, rgba(30,15,11,.88), rgba(10,7,6,.92));
-      box-shadow: var(--shadow);
+      background: linear-gradient(180deg, rgba(31,15,11,.90), rgba(10,7,6,.94));
       padding: 34px;
+      box-shadow: var(--shadow);
     }
     .hero::before {
       content: "";
-      position: absolute; inset: 0;
-      background: linear-gradient(120deg, rgba(200,155,85,.12), transparent 36%, rgba(115,23,23,.18) 70%, transparent);
+      position: absolute;
+      inset: 0;
       pointer-events: none;
+      background: linear-gradient(120deg, rgba(208,160,94,.10), transparent 36%, rgba(110,21,21,.16) 72%, transparent);
     }
     .kicker {
       display: inline-flex;
-      align-items: center;
       gap: 10px;
-      padding: 9px 15px;
+      align-items: center;
+      padding: 9px 14px;
       border-radius: 999px;
-      border: 1px solid rgba(200,155,85,.32);
+      border: 1px solid rgba(208,160,94,.28);
       color: var(--gold);
+      background: rgba(208,160,94,.06);
+      font-size: 12px;
       text-transform: uppercase;
       letter-spacing: .18em;
-      font-size: 12px;
-      background: rgba(200,155,85,.06);
     }
     .kicker::before {
       content: "";
-      width: 8px; height: 8px; border-radius: 50%;
-      background: radial-gradient(circle, #f0c77b, #9a6d2d);
-      box-shadow: 0 0 18px rgba(240,199,123,.55);
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #efca82, #94652b);
+      box-shadow: 0 0 16px rgba(239,202,130,.55);
     }
     h1 {
-      margin: 18px 0 10px;
-      font-size: clamp(2.4rem, 6vw, 5.5rem);
+      margin: 18px 0 12px;
+      font-size: clamp(2.4rem, 6vw, 5.2rem);
       line-height: .94;
+      letter-spacing: .08em;
       font-weight: 850;
-      letter-spacing: .06em;
-      text-shadow: 0 10px 34px rgba(0,0,0,.42);
+      text-shadow: 0 12px 30px rgba(0,0,0,.42);
     }
     .lead {
-      max-width: 820px;
+      max-width: 850px;
       margin: 0;
       color: var(--muted);
       line-height: 1.85;
-      font-size: clamp(1rem, 1.8vw, 1.16rem);
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
     }
-    .hero-grid {
+    .hero-grid, .rule-grid, .grid-3 {
       display: grid;
-      grid-template-columns: 1.3fr .9fr;
       gap: 18px;
-      margin-top: 26px;
     }
-    .meta, .faces {
+    .hero-grid { grid-template-columns: 1.1fr .9fr; margin-top: 26px; }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .card, .mini, .section-card, .summary, .next-card {
       border-radius: 22px;
-      background: rgba(255,255,255,.03);
       border: 1px solid rgba(255,255,255,.06);
-      padding: 18px;
+      background: rgba(255,255,255,.03);
+      box-shadow: var(--shadow);
     }
-    .meta-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-    }
-    .meta-card {
-      padding: 14px;
-      border-radius: 16px;
-      background: rgba(0,0,0,.16);
-      border: 1px solid rgba(200,155,85,.09);
-    }
-    .meta-card span {
-      display: block;
-      color: var(--muted);
-      font-size: 12px;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-    }
-    .meta-card strong { font-size: .98rem; }
-    .faces h3, .meta h3, .section-title h2 {
-      margin: 0 0 14px;
-      font-size: 1rem;
+    .card, .section-card, .summary, .next-card { padding: 20px; }
+    .mini { padding: 14px; }
+    .eyebrow {
       color: var(--gold);
-      letter-spacing: .16em;
       text-transform: uppercase;
-      font-weight: 700;
+      letter-spacing: .16em;
+      font-size: 12px;
+      margin-bottom: 10px;
     }
-    .face-list {
+    .meta-grid, .char-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0,1fr));
-      gap: 10px;
+      gap: 12px;
     }
-    .chip {
-      padding: 10px 12px;
-      border-radius: 14px;
-      background: linear-gradient(180deg, rgba(115,23,23,.20), rgba(200,155,85,.04));
-      border: 1px solid rgba(200,155,85,.14);
-      color: var(--text);
-      font-size: .95rem;
+    .meta-item, .rule, .tag {
+      border-radius: 16px;
+      border: 1px solid rgba(208,160,94,.12);
+      background: linear-gradient(180deg, rgba(110,21,21,.16), rgba(208,160,94,.04));
+      padding: 14px;
     }
-    main { padding-bottom: 76px; }
-    .section-title {
+    .meta-item span, .shot-meta span {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      margin-bottom: 6px;
+    }
+    .meta-item strong, .rule strong { font-size: .98rem; }
+    .char {
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(208,160,94,.12);
+      background: linear-gradient(180deg, rgba(22,12,10,.9), rgba(8,6,5,.94));
+    }
+    .char .thumb { aspect-ratio: 16/9; overflow: hidden; background: #0b0605; }
+    .char .thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .char .info { padding: 14px; }
+    .char h3 { margin: 0 0 8px; font-size: 1.02rem; }
+    .char p { margin: 0; color: var(--muted); line-height: 1.7; font-size: .95rem; }
+    main { padding-bottom: 78px; }
+    .section-head {
       display: flex;
       justify-content: space-between;
-      gap: 14px;
       align-items: end;
-      margin: 18px 0 20px;
+      gap: 18px;
+      margin: 24px 0 18px;
     }
-    .section-title p {
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(1.5rem, 2.5vw, 2.15rem);
+      letter-spacing: .06em;
+    }
+    .section-head p {
       margin: 0;
       color: var(--dim);
-      max-width: 720px;
-      line-height: 1.7;
+      max-width: 760px;
+      line-height: 1.8;
     }
     .timeline {
       position: relative;
-      padding-left: 78px;
+      padding-left: 80px;
     }
     .timeline::before {
       content: "";
@@ -175,49 +181,56 @@
       top: 0;
       bottom: 0;
       width: 1px;
-      background: linear-gradient(180deg, rgba(200,155,85,.42), rgba(200,155,85,.06));
+      background: linear-gradient(180deg, rgba(208,160,94,.42), rgba(208,160,94,.05));
     }
-    .shot {
-      position: relative;
-      margin-bottom: 28px;
-    }
+    .shot { position: relative; margin-bottom: 28px; }
     .marker {
       position: absolute;
-      left: -78px;
-      top: 22px;
-      width: 48px; height: 48px;
+      left: -80px;
+      top: 20px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
-      display: grid; place-items: center;
-      border: 1px solid rgba(200,155,85,.4);
-      background: radial-gradient(circle at 30% 30%, rgba(200,155,85,.16), rgba(16,8,7,.96));
+      display: grid;
+      place-items: center;
       color: var(--gold);
-      font-size: 12px; font-weight: 700;
-      box-shadow: 0 0 0 8px rgba(115,23,23,.12);
+      font-size: 12px;
+      font-weight: 700;
+      background: radial-gradient(circle at 30% 30%, rgba(208,160,94,.16), rgba(16,8,7,.96));
+      border: 1px solid rgba(208,160,94,.36);
+      box-shadow: 0 0 0 8px rgba(110,21,21,.10);
     }
-    .card {
-      border-radius: var(--radius);
+    .shot-card {
       overflow: hidden;
-      border: 1px solid rgba(200,155,85,.16);
-      background: linear-gradient(180deg, rgba(17,9,8,.94), rgba(8,6,5,.94));
+      border-radius: 26px;
+      border: 1px solid rgba(208,160,94,.14);
+      background: linear-gradient(180deg, rgba(17,9,8,.95), rgba(8,6,5,.95));
       box-shadow: var(--shadow);
     }
-    .frame {
-      position: relative;
-      aspect-ratio: 16/9;
-      overflow: hidden;
-      background: #090605;
+    .frame { aspect-ratio: 16/9; overflow: hidden; background: #090605; }
+    .frame img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.96) saturate(.93) contrast(1.03); }
+    .frame.poster-frame {
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: radial-gradient(circle at center, rgba(110,21,21,.26), transparent 45%), linear-gradient(180deg, #0d0605, #050303);
     }
-    .frame img {
-      width: 100%; height: 100%; object-fit: cover; display: block;
-      filter: brightness(.95) saturate(.92) contrast(1.04);
+    .poster-card {
+      width: min(100%, 960px);
+      min-height: 320px;
+      border-radius: 24px;
+      border: 1px solid rgba(208,160,94,.18);
+      background: linear-gradient(180deg, rgba(16,8,7,.92), rgba(8,5,5,.96));
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 34px;
+      box-shadow: inset 0 0 80px rgba(110,21,21,.18);
     }
-    .frame::after {
-      content: "";
-      position: absolute; inset: 0;
-      background: linear-gradient(180deg, rgba(0,0,0,.06), rgba(0,0,0,0) 40%, rgba(0,0,0,.45));
-      pointer-events: none;
-    }
-    .body {
+    .poster-card .title { font-size: clamp(2.6rem, 8vw, 5.6rem); font-weight: 900; letter-spacing: .22em; }
+    .poster-card .line { margin-top: 14px; color: var(--gold); letter-spacing: .24em; text-transform: uppercase; font-size: .9rem; }
+    .poster-card .tagline { margin-top: 18px; color: var(--muted); font-size: 1rem; letter-spacing: .12em; }
+    .shot-body {
       display: grid;
       grid-template-columns: 1.12fr .88fr;
       gap: 20px;
@@ -225,81 +238,48 @@
     }
     .time {
       color: var(--gold);
-      font-size: .84rem;
+      font-size: .82rem;
       letter-spacing: .18em;
       text-transform: uppercase;
       margin-bottom: 10px;
     }
-    h2 {
-      margin: 0 0 10px;
-      font-size: clamp(1.24rem, 2vw, 1.84rem);
-      line-height: 1.2;
-    }
-    .desc {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.84;
-    }
-    .side {
-      display: grid;
-      gap: 14px;
-      align-content: start;
-    }
-    .panel {
+    .shot h3 { margin: 0 0 10px; font-size: clamp(1.24rem, 2vw, 1.82rem); line-height: 1.2; }
+    .desc { margin: 0; color: var(--muted); line-height: 1.84; }
+    .shot-side { display: grid; gap: 14px; align-content: start; }
+    .shot-meta {
       border-radius: 18px;
       padding: 16px;
-      background: linear-gradient(180deg, rgba(115,23,23,.2), rgba(200,155,85,.05));
-      border: 1px solid rgba(200,155,85,.12);
+      background: linear-gradient(180deg, rgba(110,21,21,.18), rgba(208,160,94,.05));
+      border: 1px solid rgba(208,160,94,.12);
     }
-    .panel-label {
-      color: #e7c58d;
-      text-transform: uppercase;
-      letter-spacing: .16em;
-      font-size: 12px;
-      margin-bottom: 8px;
-    }
-    .panel p, .panel ul {
-      margin: 0;
-      line-height: 1.8;
-      color: #f2e5d3;
-    }
-    .panel ul { padding-left: 18px; }
-    .shotlist {
-      margin-top: 34px;
+    .shot-meta p, .shot-meta ul { margin: 0; line-height: 1.8; color: var(--text); }
+    .shot-meta ul { padding-left: 18px; }
+    .summary-grid, .next-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0,1fr));
       gap: 14px;
     }
-    .shot-item {
-      border-radius: 18px;
-      padding: 16px;
-      background: linear-gradient(180deg, rgba(22,12,10,.84), rgba(8,6,5,.92));
-      border: 1px solid rgba(200,155,85,.12);
-    }
-    .shot-item strong {
-      display: block; color: var(--gold); margin-bottom: 8px; letter-spacing: .08em;
-    }
-    .shot-item span { color: var(--muted); line-height: 1.7; }
     footer {
-      padding: 14px 0 62px;
+      padding: 12px 0 60px;
       text-align: center;
       color: var(--dim);
       font-size: 14px;
     }
-    @media (max-width: 960px) {
-      .hero-grid, .body, .shotlist { grid-template-columns: 1fr; }
+    @media (max-width: 980px) {
+      .hero-grid, .grid-3, .rule-grid, .summary-grid, .next-grid, .shot-body { grid-template-columns: 1fr; }
     }
-    @media (max-width: 700px) {
+    @media (max-width: 760px) {
       header { padding-top: 28px; }
       .hero { padding: 22px; border-radius: 24px; }
-      .timeline { padding-left: 54px; }
-      .timeline::before { left: 17px; }
-      .marker { left: -54px; width: 34px; height: 34px; font-size: 10px; top: 16px; }
-      .face-list, .meta-grid { grid-template-columns: 1fr; }
-      .body { padding: 18px; }
-      .card { border-radius: 18px; }
-      .section-title { display: block; }
-      .section-title p { margin-top: 8px; }
+      .timeline { padding-left: 56px; }
+      .timeline::before { left: 18px; }
+      .marker { left: -56px; width: 36px; height: 36px; top: 16px; font-size: 10px; }
+      .meta-grid, .char-grid { grid-template-columns: 1fr; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 8px; }
+      .shot-card { border-radius: 20px; }
+      .shot-body { padding: 18px; }
+      .poster-card { min-height: 240px; padding: 24px; }
     }
   </style>
 </head>
@@ -307,26 +287,26 @@
   <header>
     <div class="wrap">
       <section class="hero">
-        <div class="kicker">Storyboard / Keyframes / Character-lock / 夜路铃</div>
-        <h1>《夜路铃》<br>完整分镜板</h1>
-        <p class="lead">这一版把原始关键帧、角色一致性重建和预告片节奏整理到同一张板上。目标不是只看“好不好看”，而是让人物、场景、情绪和声音都能按 2 分钟预告片的逻辑被直接讨论、替换和继续扩写。</p>
+        <div class="kicker">Storyboard / Trailer / Character-lock / 夜路铃</div>
+        <h1>《夜路铃》<br>2 分钟完整版分镜板</h1>
+        <p class="lead">这一版不再是零散关键帧，而是把《夜路铃》预告片真正整理成可讨论、可继续补生图、可直接往 animatic / 剪辑推进的一套完整体系。结构上严格围绕主线：火塘讲古 → 山路启程 → 禁忌提示 → 脚印与躲藏 → 赶尸显形 → “让” → 符灰 → 土地庙 → 同脸现身 → 母亲喊魂 → 老傩扣子 → 草鞋结尾 / 片名收束。</p>
         <div class="hero-grid">
-          <section class="meta">
-            <h3>项目状态</h3>
+          <section class="card">
+            <div class="eyebrow">项目状态</div>
             <div class="meta-grid">
-              <div class="meta-card"><span>当前阶段</span><strong>人物镜头重生 + 分镜补全</strong></div>
-              <div class="meta-card"><span>风格锚点</span><strong>湘西民俗 / 民国 / 写实惊悚</strong></div>
-              <div class="meta-card"><span>页面用途</span><strong>视觉对时 · 提案 · 继续生图</strong></div>
-              <div class="meta-card"><span>本版更新</span><strong>新增人物锁脸镜头与补充分镜</strong></div>
+              <div class="meta-item"><span>当前版本</span><strong>16 镜完整版 storyboard</strong></div>
+              <div class="meta-item"><span>本轮新增</span><strong>补齐 8 个关键缺失镜头 + 环境镜头本地化</strong></div>
+              <div class="meta-item"><span>风格锚点</span><strong>湘西民俗 / 民国 / 写实惊悚</strong></div>
+              <div class="meta-item"><span>页面用途</span><strong>提案、分镜对时、生图继续扩写</strong></div>
             </div>
           </section>
-          <section class="faces">
-            <h3>已锁角色</h3>
-            <div class="face-list">
-              <div class="chip">阿回：瘦长脸 / 直眉 / 薄唇 / 倔强</div>
-              <div class="chip">年轻赶尸人：阿回同脸换皮</div>
-              <div class="chip">老傩：正常老人 / 干瘦 / 清亮眼神</div>
-              <div class="chip">母亲：贫苦山村妇人 / 压抑执念</div>
+          <section class="card">
+            <div class="eyebrow">节奏设计</div>
+            <div class="meta-grid">
+              <div class="meta-item"><span>前段</span><strong>讲古、立规矩、压空间</strong></div>
+              <div class="meta-item"><span>中段</span><strong>显形、停铃、“让”、符灰</strong></div>
+              <div class="meta-item"><span>后段</span><strong>庙门、同脸、喊魂、老傩扣子</strong></div>
+              <div class="meta-item"><span>结尾</span><strong>草鞋落刺 + 片名黑场</strong></div>
             </div>
           </section>
         </div>
@@ -335,25 +315,59 @@
   </header>
 
   <main class="wrap">
-    <div class="section-title">
-      <h2>12 镜完整分镜</h2>
-      <p>从讲古、夜路、脚印、赶尸显形，到土地庙镜像与喊魂收束。前半段负责建立民俗空间，后半段负责把“阿回与赶尸人的同脸关系”钉进观众脑子里。</p>
+    <section class="section-card">
+      <div class="section-head" style="margin-top:0;">
+        <h2>当前已锁角色与一致性规则</h2>
+        <p>本页优先级不是“花”，而是人物能不能稳定、可复用、可反复补镜。尤其年轻赶尸人必须与阿回同脸，只允许气色与死亡感变化，不允许换成另一张更“帅”的脸。</p>
+      </div>
+      <div class="char-grid">
+        <article class="char">
+          <div class="thumb"><img src="assets/char-ahui.png" alt="阿回三视图"></div>
+          <div class="info"><h3>阿回</h3><p>最新版脸模基准。瘦长脸、直眉、薄唇、倔，土气但不呆，后续所有阿回镜头以此为准。</p></div>
+        </article>
+        <article class="char">
+          <div class="thumb"><img src="assets/char-young-driver.png" alt="年轻赶尸人三视图"></div>
+          <div class="info"><h3>年轻赶尸人</h3><p>必须与阿回同脸，只能更白、更冷、更死，像一张提前走上夜路的阿回，而不是新角色。</p></div>
+        </article>
+        <article class="char">
+          <div class="thumb"><img src="assets/char-laonuo.png" alt="老傩三视图"></div>
+          <div class="info"><h3>老傩</h3><p>正常老人，不妖道化。干瘦、眼神亮、像真正见过旧事的人，负责给整个故事“口传可信度”。</p></div>
+        </article>
+        <article class="char">
+          <div class="thumb"><img src="assets/char-old-driver.png" alt="老赶尸人三视图"></div>
+          <div class="info"><h3>老赶尸人</h3><p>作为队伍权威感与仪式感的补充参照，用于后续如需扩拍更完整赶尸系统镜头。</p></div>
+        </article>
+        <article class="char">
+          <div class="thumb"><img src="assets/char-mother.png" alt="阿回母亲三视图"></div>
+          <div class="info"><h3>阿回母亲</h3><p>贫苦山村妇人，压抑、固执、爱意非常笨拙。她不是“哭戏工具人”，而是情感核心。</p></div>
+        </article>
+      </div>
+      <div class="rule-grid grid-3" style="margin-top:18px;">
+        <div class="rule"><strong>规则 01</strong><br><span style="color:var(--muted); line-height:1.8; display:block; margin-top:8px;">整体坚持湘西民俗恐怖、民国、写实，不仙侠、不古偶、不玄幻滤镜。</span></div>
+        <div class="rule"><strong>规则 02</strong><br><span style="color:var(--muted); line-height:1.8; display:block; margin-top:8px;">气质参考：早期张艺谋农村现实质感 +《路边野餐》+ 湘西纪录片，而不是网红古风。</span></div>
+        <div class="rule"><strong>规则 03</strong><br><span style="color:var(--muted); line-height:1.8; display:block; margin-top:8px;">道具记忆点固定为：铜铃、黄符、草鞋、米粒、土地庙门槛。后续所有物料都尽量围绕这套意象系统。</span></div>
+      </div>
+    </section>
+
+    <div class="section-head">
+      <h2>16 镜完整版预告片分镜</h2>
+      <p>总时长按 2 分钟控制。前 40 秒给口传民俗与夜路规矩，中段把“遇上了”做实，后段靠同脸关系、母亲喊魂和老傩扣子把恐怖拉成命运感。</p>
     </div>
 
     <section class="timeline">
       <article class="shot">
         <div class="marker">01</div>
-        <section class="card">
-          <div class="frame"><img src="https://p26-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/2398d31aad704f0db2d6d18972ad98f7~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1775581200&x-signature=f9yBLEdfZnEGkIxqH5YzunibyY8%3D&format=.png" alt="火塘讲古" loading="eager"></div>
-          <div class="body">
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-firepit-story.png" alt="火塘讲古"></div>
+          <div class="shot-body">
             <div>
-              <div class="time">00:00 — 00:10</div>
-              <h2>铃响之前，先听故事</h2>
-              <p class="desc">黑场之后，先是铃响，再是火光。火塘讲古是《夜路铃》的入口：观众先被拉进一个“有人亲口讲过这件事”的空间，而不是被特效硬吓。老傩的存在让整个故事带上地方口耳相传的可信度。</p>
+              <div class="time">00:00 — 00:08</div>
+              <h3>火塘讲古</h3>
+              <p class="desc">黑场先出铃，再给火塘。老傩把“赶尸人，我见过”说出口，整个预告片就站稳了口传民俗的入口，不是特效片开场，而是有人真经历过。</p>
             </div>
-            <div class="side">
-              <div class="panel"><div class="panel-label">台词 / 音效</div><p>VO："赶尸人，我见过。"<br>FX：木柴爆裂、铃声极轻、门外风声。</p></div>
-              <div class="panel"><div class="panel-label">镜头功能</div><p>建立叙事口吻、火塘氛围、民俗口传感。</p></div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>建立叙事口吻、民俗可信度、火塘空间。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“赶尸人，我见过。”</strong><br>FX：木柴爆裂，极远的铜铃，门外风声。</p></div>
             </div>
           </div>
         </section>
@@ -361,107 +375,342 @@
 
       <article class="shot">
         <div class="marker">02</div>
-        <section class="card">
-          <div class="frame"><img src="https://p26-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/b8b1a11792d149d591f33e060f5c4e7b~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1775577600&x-signature=OBs8%2FsinAjlCiR4D%2FZ644%2B%2FWgY4%3D&format=.png" alt="山路起点" loading="lazy"></div>
-          <div class="body"><div><div class="time">00:10 — 00:18</div><h2>山路起点，月光像钉在山口</h2><p class="desc">月色把山脊钉死，路像一根细线伸进黑里。预告片在这里从讲述切到“亲历”，把观众真正放上夜路。</p></div><div class="side"><div class="panel"><div class="panel-label">台词 / 音效</div><p>VO："那夜，月亮像钉在山口。"<br>FX：风压芭茅，虫鸣忽止。</p></div><div class="panel"><div class="panel-label">镜头功能</div><p>建立空间尺度与孤绝感。</p></div></div></div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-laonuo-firepit-close.png" alt="老傩火塘中近景"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">00:08 — 00:14</div>
+              <h3>老傩中近景，旧事像压在眼里</h3>
+              <p class="desc">补一个更适合入剧情的老傩镜头，让他不只是一张角色图，而是故事真正的讲述者。火光打在脸沟壑上，像这事他一直没讲完。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>把“讲古的人”从环境里抠出来，为最后扣子预埋身份感。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“那夜，山里的人都不敢出门。”</strong><br>FX：火塘轻塌一下，屋内安静下来。</p></div>
+            </div>
+          </div>
         </section>
       </article>
 
       <article class="shot">
         <div class="marker">03</div>
-        <section class="card">
-          <div class="frame"><img src="https://p11-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/31ff1009e61c4ed0a413506fdfb0fad9~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1775610000&x-signature=Dk%2B%2BhAZOaxOAKVdA4TgM4tt7Nhg%3D&format=.png" alt="阿回夜路特写" loading="lazy"></div>
-          <div class="body"><div><div class="time">00:18 — 00:28</div><h2>阿回夜路特写</h2><p class="desc">新版人物锁脸镜头。阿回的脸终于要作为“后面一切对照的基准脸”被钉住：这张脸得朴素、倔、压着怕，但绝不能像网红模板。</p></div><div class="side"><div class="panel"><div class="panel-label">台词 / 音效</div><p>VO："阿回背着竹篓，走进了那条回不了头的路。"<br>FX：呼吸、布料摩擦、远处一记铃。</p></div><div class="panel"><div class="panel-label">角色约束</div><p>后续所有阿回镜头都以这张脸为准。</p></div></div></div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-mother-talisman.png" alt="母亲塞符"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">00:14 — 00:21</div>
+              <h3>母亲塞符</h3>
+              <p class="desc">把母子关系提前落地。黄符不是玄学道具，而是母亲笨拙地想把儿子拽回来。这样后面符灰和喊魂才有痛感，不只是功能点。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>建立阿回与母亲关系，埋下符纸与“护不住”的命题。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“她把符塞进我怀里，说夜路上别回头。”</strong><br>FX：布料摩擦，手指按进衣襟。</p></div>
+            </div>
+          </div>
         </section>
       </article>
 
       <article class="shot">
         <div class="marker">04</div>
-        <section class="card">
-          <div class="frame"><img src="https://p26-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/811683554cf248a7b1ce1085d4d61abe~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1775581200&x-signature=Ht7ebK2v18ILh0Cv%2BgMdN7hplv0%3D&format=.png" alt="草鞋脚印" loading="lazy"></div>
-          <div class="body"><div><div class="time">00:28 — 00:36</div><h2>泥地上的草鞋脚印</h2><p class="desc">把预告片的恐怖感从抽象拉到地面上。脚印是可见的证据，也是“赶尸”第一次从传闻变成物理存在。</p></div><div class="side"><div class="panel"><div class="panel-label">台词 / 音效</div><p>VO："脚印停在他身后三尺。"<br>FX：泥水黏连、脚底摩擦、铃声更近。</p></div><div class="panel"><div class="panel-label">镜头功能</div><p>第一层寒意；具体且可感。</p></div></div></div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-mountain-start.png" alt="山路起点"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">00:21 — 00:28</div>
+              <h3>山路启程</h3>
+              <p class="desc">月亮钉在山口，土路一头扎进黑里。预告片从讲述切到亲历，观众被放到阿回脚下那条路上，空间一下变冷。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>建立山路尺度与孤绝感，正式入夜。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“月亮像钉在山口。”</strong><br>FX：风压芭茅，虫鸣突然停一拍。</p></div>
+            </div>
+          </div>
         </section>
       </article>
 
       <article class="shot">
         <div class="marker">05</div>
-        <section class="card">
-          <div class="frame"><img src="https://p26-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/0e3b75a7acef42b4b0eac15d932aa7bc~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1775577600&x-signature=40RqQoZzRmIDMqfi6m27qpsJ72Q%3D&format=.png" alt="赶尸队伍" loading="lazy"></div>
-          <div class="body"><div><div class="time">00:36 — 00:50</div><h2>赶尸队伍显形</h2><p class="desc">当队伍真正出现，观众就不再怀疑这是个传说，而是接受“他们真的在走”。这也是整支预告片最标准的类型片揭示镜头。</p></div><div class="side"><div class="panel"><div class="panel-label">台词 / 音效</div><p>VO："遇人别遇客。"<br>FX：铜铃连响，草绳轻碰，山风停顿。</p></div><div class="panel"><div class="panel-label">构图重点</div><p>整齐、沉默、膝盖不弯。</p></div></div></div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-ahui-closeup.png" alt="阿回夜路特写"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">00:28 — 00:35</div>
+              <h3>阿回夜路特写</h3>
+              <p class="desc">这张脸是后面所有反照的基准脸。阿回得像普通湘西山里少年，怕，但硬撑着走；不是漂亮演员硬演“朴素”。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>锁定阿回脸模，为“同脸”反转提供视觉标准。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“阿回那时候，还不知道自己撞上了什么。”</strong><br>FX：呼吸、竹篓轻碰、远处一记铃。</p></div>
+            </div>
+          </div>
         </section>
       </article>
 
       <article class="shot">
         <div class="marker">06</div>
-        <section class="card">
-          <div class="frame"><img src="https://p26-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/fc41216a4d3b40458fe9298e0bbcc6af~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1775577600&x-signature=TBQQ382eR%2B4J6ZvBiVBt0huwClU%3D&format=.png" alt="土地庙内景" loading="lazy"></div>
-          <div class="body"><div><div class="time">00:50 — 01:00</div><h2>土地庙，庇护还是交换</h2><p class="desc">从山路切进神龛，是预告片的空间收紧。土地庙像能躲，又像躲不掉。所有香灰、米粒、旧草鞋都会在这里变成“请路”的证据。</p></div><div class="side"><div class="panel"><div class="panel-label">台词 / 音效</div><p>VO："庙门之后，就不是活人的路了。"<br>FX：香灰落下、门板轻响、供桌回声。</p></div><div class="panel"><div class="panel-label">道具焦点</div><p>黄表纸、香炉、米粒、旧木门。</p></div></div></div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-rice-on-road.png" alt="米粒撒路"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">00:35 — 00:42</div>
+              <h3>米粒撒路</h3>
+              <p class="desc">补上禁忌系统里最关键的“地面动作”。阿回蹲下撒米，路就从抽象恐怖变成一种民俗里可操作、却也挡不住的规矩。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>把“避路 / 请路 / 禁忌提示”做成具体动作，丰富民俗细节。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“遇上夜路客，就撒米，让他们认路，莫认人。”</strong><br>FX：米粒打在泥地上的细碎声。</p></div>
+            </div>
+          </div>
         </section>
       </article>
 
       <article class="shot">
         <div class="marker">07</div>
-        <section class="card">
-          <div class="frame"><img src="https://p11-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/bd056da186384ddea12af5a439d9372c~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1775610000&x-signature=wLtd1To8QygvxpLHnwDXtj2Wqa8%3D&format=.png" alt="年轻赶尸人现身" loading="lazy"></div>
-          <div class="body"><div><div class="time">01:00 — 01:12</div><h2>年轻赶尸人现身</h2><p class="desc">新版锁脸镜头的核心用途在这里：观众第一次意识到，这人不是普通赶尸人，而像阿回的死人镜像。惊悚感不靠鬼脸，而靠“明明是同一个人”。</p></div><div class="side"><div class="panel"><div class="panel-label">台词 / 音效</div><p>VO："那人抬起脸时，阿回像在照一面死掉的镜子。"<br>FX：铃音停住，空气突然空掉。</p></div><div class="panel"><div class="panel-label">角色约束</div><p>必须和阿回同脸，仅肤色与气息不同。</p></div></div></div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-straw-sandals-footprints.png" alt="草鞋脚印"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">00:42 — 00:49</div>
+              <h3>草鞋脚印</h3>
+              <p class="desc">恐怖第一次落地。泥地上的草鞋脚印不是幻想，是证据；观众第一次确认，这东西真的在走，而且已经走到阿回身后。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>完成从“听说”到“看见”的第一跳。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“脚印，停在他身后三尺。”</strong><br>FX：泥水黏连、脚底擦地、铃声更近。</p></div>
+            </div>
+          </div>
         </section>
       </article>
 
       <article class="shot">
         <div class="marker">08</div>
-        <section class="card">
-          <div class="frame"><img src="https://p26-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/181bd18280394d239fd817487606f47d~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1775610000&x-signature=K8a4dVFKoEqxRsZI8aLXignrqcE%3D&format=.png" alt="阿回与年轻赶尸人对照镜头" loading="lazy"></div>
-          <div class="body"><div><div class="time">01:12 — 01:22</div><h2>同脸对视</h2><p class="desc">这是新版里最值钱的镜头之一。阿回和年轻赶尸人在同一画面里互为镜像，观众终于彻底明白：这不是“遇见怪物”，是“看见自己已经上路”。</p></div><div class="side"><div class="panel"><div class="panel-label">台词 / 音效</div><p>VO："最末尾那个，像他自己。"<br>FX：心跳声抬高、铃音抽成一根细线。</p></div><div class="panel"><div class="panel-label">镜头功能</div><p>整支预告片的身份反转钉子镜头。</p></div></div></div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-procession.png" alt="赶尸队伍显形"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">00:49 — 00:58</div>
+              <h3>赶尸队伍显形</h3>
+              <p class="desc">整支预告片第一次完整揭示类型元素。队伍要整齐、沉默、膝盖不弯，像一支穿过夜山的死队，不要妖魔化到失真。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>类型片揭示镜头，确认“赶尸”真实存在。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“不是一个，是一队。”</strong><br>FX：铜铃连响，草绳轻撞，山风像忽然让开。</p></div>
+            </div>
+          </div>
         </section>
       </article>
 
       <article class="shot">
         <div class="marker">09</div>
-        <section class="card">
-          <div class="frame"><img src="https://p11-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/1381a02506a8419c887353e3534dae86~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1775581200&x-signature=zB4GY3OeZXJNcNNgdc0S4eqbOqg%3D&format=.png" alt="母亲喊魂" loading="lazy"></div>
-          <div class="body"><div><div class="time">01:22 — 01:34</div><h2>母亲喊魂</h2><p class="desc">情绪峰值。母亲不是背景信息，她是把民俗规矩转成人心疼痛的那一锤。观众要在这里第一次真正难受，而不是单纯害怕。</p></div><div class="side"><div class="panel"><div class="panel-label">台词 / 音效</div><p>VO："阿回，回家吃饭了——"<br>FX：回音一层层退进山里，铃声变尖。</p></div><div class="panel"><div class="panel-label">情绪功能</div><p>从类型惊悚切到情感刺痛。</p></div></div></div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-say-let.png" alt="赶尸人停铃说让"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">00:58 — 01:06</div>
+              <h3>赶尸人停铃，说“让”</h3>
+              <p class="desc">这是这一版必须补上的节奏铰链。赶尸人一停，铃声断掉，整个世界像被抽空。只说一个字，比喊叫和怪叫都更瘆人。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>制造中段强停顿，把观众和阿回一起钉住。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>对白：<strong>“让。”</strong><br>FX：铃声戛然而止，空气静到能听见心跳。</p></div>
+            </div>
+          </div>
         </section>
       </article>
 
       <article class="shot">
         <div class="marker">10</div>
-        <section class="card">
-          <div class="frame"><img src="https://p11-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/73442ac9113341b180c61001667e084d~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1775577600&x-signature=oTCMMGyc9Pf5Z4XNrYVMJOtdfIM%3D&format=.png" alt="铜铃黄符草鞋" loading="lazy"></div>
-          <div class="body"><div><div class="time">01:34 — 01:40</div><h2>铜铃 / 黄符 / 草鞋</h2><p class="desc">进入结尾前的意象剪切。让所有观众记住这三个视觉记忆点——一听铃，一看符，一见草鞋，就会自动想起《夜路铃》。</p></div><div class="side"><div class="panel"><div class="panel-label">台词 / 音效</div><p>FX：铜铃近响，纸符轻颤，脚步擦地。<br>VO："符烧了，路就亮了。"</p></div><div class="panel"><div class="panel-label">品牌功能</div><p>做成物料和海报都能复用的核心意象。</p></div></div></div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-paper-ash.png" alt="黄符烧成灰"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">01:06 — 01:13</div>
+              <h3>黄符烧成灰</h3>
+              <p class="desc">母亲给的护符在这里失效。胸口一烫，灰落到衣襟上，观众会明白：规矩知道了也没用，真正的路已经认上你了。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>制造一次短促强惊点，同时宣告“护身”失效。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“符一热，我就知道坏了。”</strong><br>FX：纸符冒火、灰扑簌落下。</p></div>
+            </div>
+          </div>
         </section>
       </article>
 
       <article class="shot">
         <div class="marker">11</div>
-        <section class="card">
-          <div class="frame"><img src="https://p11-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/94d3ad2ad92746f8ac0e4d7b9e40acec~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1775610000&x-signature=TisHaX8eFPGcmL%2BmsV4hQ801qMs%3D&format=.png" alt="老傩三视图" loading="lazy"></div>
-          <div class="body"><div><div class="time">01:40 — 01:48</div><h2>讲古的人，也在故事里</h2><p class="desc">这里不是直接揭底，而是给老傩一个压暗的、像真相边缘的镜头位。让观众意识到：讲这个故事的人，可能并不是站在故事外面的人。</p></div><div class="side"><div class="panel"><div class="panel-label">台词 / 音效</div><p>VO："讲故事的人，就是故事里的人。"<br>FX：火塘熄下一截，屋里突然更冷。</p></div><div class="panel"><div class="panel-label">镜头功能</div><p>给尾声反转留扣子。</p></div></div></div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-temple-shoes.png" alt="土地庙门口草鞋"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">01:13 — 01:20</div>
+              <h3>土地庙门口草鞋</h3>
+              <p class="desc">从山路切到庙门，是空间骤然收紧的一刀。草鞋摆在门槛前，像有人先一步脱下，也像在请人换路，视觉上非常适合做短停顿。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>把“庙”与“草鞋”绑定，成为后半段最重要的门槛意象。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“庙门口那双鞋，不像给活人穿的。”</strong><br>FX：门轴轻响，远处铃音穿过门缝。</p></div>
+            </div>
+          </div>
         </section>
       </article>
 
       <article class="shot">
         <div class="marker">12</div>
-        <section class="card">
-          <div class="frame"><img src="https://p26-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/e3d6a5897ae34fea9a33ad6386742db5~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1775581200&x-signature=qfFQpmwaK%2BzHLWW7tMZlC%2BlR95w%3D&format=.png" alt="主海报" loading="lazy"></div>
-          <div class="body"><div><div class="time">01:48 — 02:00</div><h2>黑场前，铃还没停</h2><p class="desc">最后回到主海报和片名。不是把故事讲完，而是把观众留在那条路上——铃声停了，夜路却没有结束。</p></div><div class="side"><div class="panel"><div class="panel-label">片名卡</div><p><strong>《夜路铃》</strong><br>Tagline：<strong>铃响夜路，莫问归人。</strong></p></div><div class="panel"><div class="panel-label">尾音</div><p>最后一记孤铃，黑场，余音拖长。</p></div></div></div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-temple-interior.png" alt="土地庙内景"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">01:20 — 01:28</div>
+              <h3>土地庙内景</h3>
+              <p class="desc">神龛、香灰、米粒、黄符全堆在狭窄空间里，民俗感在这里最密。这个镜头不是为了吓，是为了让观众知道“路”和“庙”之间有一套旧规矩在运作。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>完成空间收缩，承接后面的“看见自己”。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“躲得进庙门，躲不过认路的东西。”</strong><br>FX：香灰落下，木门轻颤，供桌回声空。</p></div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="shot">
+        <div class="marker">13</div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-last-corpse-turns.png" alt="末尾尸体回头像阿回"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">01:28 — 01:36</div>
+              <h3>队伍末尾尸体回头，像阿回</h3>
+              <p class="desc">这是从“怕赶尸”往“怕自己已经在队里”迈出去的一步。末尾那具尸体一回头，恐怖就从外部目标变成身份塌陷。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>把“同脸”先做成半揭示，再引向真正现身。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“最末尾那个，像他自己。”</strong><br>FX：心跳上来，铃声拉成一根细线。</p></div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="shot">
+        <div class="marker">14</div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-young-driver-reveal.png" alt="年轻赶尸人现身"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">01:36 — 01:43</div>
+              <h3>年轻赶尸人现身</h3>
+              <p class="desc">正式把年轻赶尸人推出画面中心。关键不是“鬼气”，而是他像另一个版本的阿回：已经更白、更冷、更安静地走在夜路上。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>完成角色反照的第一重显形。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“那人抬起脸，像一面死掉的镜子。”</strong><br>FX：铃音又响，但更空。</p></div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="shot">
+        <div class="marker">15</div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-face-compare.png" alt="阿回与年轻赶尸人同脸对照"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">01:43 — 01:50</div>
+              <h3>阿回 / 年轻赶尸人同脸对照</h3>
+              <p class="desc">这是整支预告片最值钱的钉子镜头。不是“撞鬼”，而是“看见自己已经被夜路先走了一遍”。观众必须在这里彻底记住同脸逻辑。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>身份反转的视觉核心，后续所有海报物料都可以从这一组关系发展。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“那张脸，就是他自己的。”</strong><br>FX：呼吸压紧，铃声退到极远。</p></div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="shot">
+        <div class="marker">16</div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-mother-call.png" alt="母亲喊魂"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">01:50 — 01:56</div>
+              <h3>母亲喊魂</h3>
+              <p class="desc">情绪峰值不能省。母亲一喊，恐怖就从类型片的惊吓转成人心真正疼的地方：有人还在等阿回回家吃饭。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>把故事从民俗惊悚提到命运与亲情层面。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>对白：<strong>“阿回——回家吃饭了——”</strong><br>FX：回声一层层退进山里，风把尾音吹散。</p></div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="shot">
+        <div class="marker">17</div>
+        <section class="shot-card">
+          <div class="frame"><img src="assets/shot-ahui-sees-shoes.png" alt="阿回出院低头见草鞋"></div>
+          <div class="shot-body">
+            <div>
+              <div class="time">01:56 — 01:59</div>
+              <h3>阿回低头，脚边是草鞋</h3>
+              <p class="desc">这是结尾最后一刺。可以理解成“出院 / 醒后 / 回到人间”的错觉，但一低头，草鞋已经在脚边，说明路没有结束，东西还跟着他。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>完成尾刺，比直接黑场更有延迟寒意。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>FX：衣摆一动，脚边草鞋轻轻摩擦石阶。<br>VO：<strong>“他以为自己回来了。”</strong></p></div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="shot">
+        <div class="marker">18</div>
+        <section class="shot-card">
+          <div class="frame poster-frame">
+            <div class="poster-card">
+              <div class="title">夜路铃</div>
+              <div class="line">Night Road Bell</div>
+              <div class="tagline">铃响夜路，莫问归人。</div>
+            </div>
+          </div>
+          <div class="shot-body">
+            <div>
+              <div class="time">01:59 — 02:00</div>
+              <h3>老傩扣子 / 片名黑场收束</h3>
+              <p class="desc">片名卡前后可以插一声老傩的尾句：讲故事的人，也许根本没离开过那条路。黑场时只留最后一记孤铃，观众会把草鞋、同脸、母亲喊魂一起带走。</p>
+            </div>
+            <div class="shot-side">
+              <div class="shot-meta"><span>镜头功能</span><p>完成尾声扣子，把老傩重新接回开场，形成闭环。</p></div>
+              <div class="shot-meta"><span>台词 / 音效</span><p>VO：<strong>“夜路一响铃，就有人回不来。”</strong><br>FX：最后一记孤铃，切黑。</p></div>
+            </div>
+          </div>
         </section>
       </article>
     </section>
 
-    <div class="section-title" style="margin-top:40px;">
-      <h2>补充分镜建议</h2>
-      <p>下面这些镜头还没都可视化，但很值得继续补，能把预告片从“有关键画面”推到“节奏完整”。</p>
-    </div>
-    <section class="shotlist">
-      <article class="shot-item"><strong>A / 母亲塞符</strong><span>黄符塞进衣襟，指甲掐进手腕，建立母子关系与禁忌规矩。</span></article>
-      <article class="shot-item"><strong>B / 米粒撒路</strong><span>竹篓磕破，炒米落地，后面“引路”才真正闭环。</span></article>
-      <article class="shot-item"><strong>C / 让</strong><span>赶尸人侧头，停铃，只说一个字：“让。”</span></article>
-      <article class="shot-item"><strong>D / 符灰</strong><span>胸口一烫，符纸冒烟，灰落在衣襟上，极适合做短促惊吓点。</span></article>
-      <article class="shot-item"><strong>E / 草鞋结尾</strong><span>出院后低头，鞋不知何时变成草鞋，最适合做结尾最后一刺。</span></article>
-      <article class="shot-item"><strong>F / 队伍末尾</strong><span>最后一具尸体回头，像阿回自己，可作为比对剪辑的重要节点。</span></article>
+    <section class="summary" style="margin-top:38px;">
+      <div class="section-head" style="margin-top:0; margin-bottom:14px;">
+        <h2>本轮新增的关键镜头</h2>
+        <p>这轮新增不是为了凑数，而是专门补齐原先预告片结构里缺失的“逻辑桥”和“情绪钉子”。</p>
+      </div>
+      <div class="summary-grid">
+        <div class="mini"><div class="eyebrow">新增 01</div><strong>母亲塞符 / 黄符烧灰</strong><p style="margin:8px 0 0; color:var(--muted); line-height:1.75;">把母亲与护符从道具变成情感因果链，后面喊魂才成立。</p></div>
+        <div class="mini"><div class="eyebrow">新增 02</div><strong>米粒撒路 / “让”</strong><p style="margin:8px 0 0; color:var(--muted); line-height:1.75;">补齐民俗规矩和中段停顿，让夜路系统更完整、更可拍。</p></div>
+        <div class="mini"><div class="eyebrow">新增 03</div><strong>庙门草鞋 / 末尾回头 / 草鞋尾刺</strong><p style="margin:8px 0 0; color:var(--muted); line-height:1.75;">把“草鞋”从一个意象升成贯穿头尾的视觉咒语。</p></div>
+      </div>
+    </section>
+
+    <section class="next-card" style="margin-top:22px;">
+      <div class="section-head" style="margin-top:0; margin-bottom:14px;">
+        <h2>下一步可继续补的镜头</h2>
+        <p>这套板已经能拿去继续做 animatic 和视频节奏讨论；如果还要再往上提，优先补下面这些，不建议再泛加新桥段。</p>
+      </div>
+      <div class="next-grid">
+        <div class="mini"><div class="eyebrow">优先提升</div><strong>阿回“躲藏视角”镜头</strong><p style="margin:8px 0 0; color:var(--muted); line-height:1.75;">现在有脚印和显形，但“阿回屏住呼吸躲在草丛 / 庙侧”的主观镜头还可以补一张，节奏会更完整。</p></div>
+        <div class="mini"><div class="eyebrow">优先提升</div><strong>老傩尾声反打</strong><p style="margin:8px 0 0; color:var(--muted); line-height:1.75;">如果要把老傩扣子再做深，可以补一个讲完故事后他独自坐在火塘边的反打，暗示他还困在故事里。</p></div>
+        <div class="mini"><div class="eyebrow">优先提升</div><strong>同脸镜头再细分一张极近特写</strong><p style="margin:8px 0 0; color:var(--muted); line-height:1.75;">目前已有现身和对照，如果再补一张阿回眼睛 / 年轻赶尸人眼睛的极近对切，预告片高潮会更狠。</p></div>
+      </div>
     </section>
   </main>
 
-  <footer>《夜路铃》Complete Storyboard · rebuilt for stronger character consistency and trailer sequencing</footer>
+  <footer>《夜路铃》 Full Storyboard v2 · 16-shot trailer board · local assets rebuilt for stable public viewing</footer>
 </body>
 </html>
